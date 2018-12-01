@@ -1,8 +1,8 @@
 INSERT INTO burgers (burger_name)
-VALUES ("burger 1")
+VALUES ("New Bacon-Ings Burger")
 
 INSERT INTO burgers (burger_name)
-VALUES ("burger 2")
+VALUES ("If Looks Could Kale Burger")
 
 INSERT INTO burgers (burger_name)
-VALUES ("burger 3")
+VALUES ("Poutine on the Ritz Burger")

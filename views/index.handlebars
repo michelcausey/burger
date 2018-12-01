@@ -7,19 +7,19 @@ Create a button in index.handlebars that will submit the user input into the dat
 <h2>Burger's That Have Not Been Eaten!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burger's That Have Been Eaten!</h2>
+<h2>Burgers That Have Been Eaten!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -32,11 +32,11 @@ Create a button in index.handlebars that will submit the user input into the dat
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Eat It?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Eaten!<br>
-    <input type="radio" name="sleepy" value="0"> Still Available
-  </div>
+  {{!-- <div class="form-group">
+    <label for="devoured">Eat It?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Eaten!<br>
+    <input type="radio" name="devoured" value="0"> Still Available
+  </div> --}}
 
-  <button type="submit">Create!</button>
+  <button type="submit">Add!</button>
 </form>
