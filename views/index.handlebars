@@ -2,9 +2,9 @@
 
 Create a button in index.handlebars that will submit the user input into the database. --}}
 
-<h1>Bob's Burgers!</h1>
+<h1>Bob's Burgers</h1>
 
-<h2>Burger's That Have Not Been Eaten!</h2>
+<h2>Not Eaten</h2>
 
 <ul>
   {{#each burgers}}
@@ -14,7 +14,7 @@ Create a button in index.handlebars that will submit the user input into the dat
   {{/each}}
 </ul>
 
-<h2>Burgers That Have Been Eaten!</h2>
+<h2>Eaten</h2>
 
 <ul>
   {{#each burgers}}
@@ -28,15 +28,9 @@ Create a button in index.handlebars that will submit the user input into the dat
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="ca">Name Your Burger:</label>
+    <input type="text" id="ca" name="burger_name">
   </div>
 
-  {{!-- <div class="form-group">
-    <label for="devoured">Eat It?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Eaten!<br>
-    <input type="radio" name="devoured" value="0"> Still Available
-  </div> --}}
-
-  <button type="submit">Add!</button>
+  <button type="submit">Add</button>
 </form>
