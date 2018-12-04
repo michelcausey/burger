@@ -1,10 +1,10 @@
 $(function() {
   $(".devour-burger").on("click", function(event) {
     var id = $(this).data("id");
-    var newBurger = $(this).data("newBurger");
+    var newburger = $(this).data("newburger");
 
     var newBurgerState = {
-      devoured: newBurger
+      devoured: newburger
     };
 
     // Send the PUT request.
@@ -23,9 +23,8 @@ $(function() {
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-    console.log("clicked")
 
-    var newBurger1
+    var newburger1
      = {
       name: $("#ca").val(),
     };
@@ -33,7 +32,7 @@ $(function() {
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newBurger1
+      data: newburger1
 
     }).then(
       function() {
@@ -43,4 +42,5 @@ $(function() {
       }
     );
   });
+
 });
