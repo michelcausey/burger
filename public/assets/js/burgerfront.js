@@ -1,6 +1,5 @@
 $(function() {
   $(".devour-burger").on("click", function(event) {
-    console.log("clicked")
     var id = $(this).data("id");
     var newBurger = $(this).data("newBurger");
 
@@ -9,7 +8,7 @@ $(function() {
     };
 
     // Send the PUT request.
-    $.ajax("/api/burger/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newBurgerState
     }).then(
@@ -31,7 +30,7 @@ $(function() {
     };
 
     // Send the POST request.
-    $.ajax("/api/burger", {
+    $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger
 
@@ -43,5 +42,4 @@ $(function() {
       }
     );
   });
-
 });
