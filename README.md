@@ -7,3 +7,5 @@
 * Each burger in the waiting area also has a Devour! button. When the user clicks it, the burger will move to the "eaten" side of the page.
 
 * The app will store every burger in a database, whether devoured or not.
+
+* NOTE: You have to refresh after each ADD or DEVOUR at this point, but once refreshed the correct info shows. 
