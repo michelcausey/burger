@@ -20,11 +20,12 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $(".create-form").click(function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
+    console.log("clicked")
 
-    var newBurger
+    var newBurger1
      = {
       name: $("#ca").val(),
     };
@@ -32,7 +33,7 @@ $(function() {
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newBurger
+      data: newBurger1
 
     }).then(
       function() {
